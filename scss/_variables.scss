@@ -1,0 +1,19 @@
+@mixin background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin transitions {
+    transition: .5s ease;
+}
+
+@mixin type($bg, $c, $bd) {
+    background-color: $bg !important;
+    color: $c !important;
+    border: $bd !important;
+}
+
+@mixin boxShadow {
+    box-shadow: 2px 3px 4px rgba(141, 137, 137, 0.884);
+}

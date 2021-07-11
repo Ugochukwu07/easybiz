@@ -1,0 +1,25 @@
+.error-404 {
+    small {
+        border: 3px solid lighten($color: red, $amount: 25);
+    }
+    .main-404 {
+        font-size: 15em;
+        position: relative;
+        margin-bottom: .1em;
+        display: inline-block;
+        &::after {
+            position: absolute;
+            padding: 5px;
+            background: lighten($color: red, $amount: 25);
+            border-radius: 10px;
+            line-height: 1;
+            border: 2px solid darken($color: gray, $amount: 20);
+            content: 'error';
+            font-size: 3rem;
+            bottom: 2.4rem;
+            right: -8rem;
+            transition: .9s ease-in-out;
+            animation: wobble 1.5s infinite;
+        }
+    }
+}

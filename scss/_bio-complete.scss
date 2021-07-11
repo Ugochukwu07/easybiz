@@ -1,0 +1,75 @@
+.forNav {
+    box-shadow: 2px 3px 4px rgba(189, 187, 187, 0.781);
+    border: .5px solid rgba(189, 187, 187, 0.781);
+    height: 80vh;
+    position: relative;
+    ul {
+        li {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            position: relative;
+            text-align: center;
+            width: 25% !important;
+            cursor: pointer;
+            &::before {
+                content: "";
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                padding: 1.5px;
+                position: absolute;
+                border-radius: 10%;
+                background-color: rgba(27, 107, 255, 0.979);
+            }
+        }
+    }
+}
+
+.formBag {
+    position: absolute !important;
+    background: -webkit-linear-gradient(top, #109b8456, #ffffff56);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 4px rgba(189, 187, 187, 0.781);
+    border: 0.5px solid rgba(189, 187, 187, 0.781);
+    /*border: 1px solid red;*/
+}
+
+.store-1,
+.store-4,
+.store-3 {
+    display: none !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .formBag {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .formBag {
+        position: relative !important;
+        margin-top: 2em;
+        padding: 0px;
+        width: 110% !important;
+        .form-group {}
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .nav-item {
+        width: 100% !important;
+    }
+    .formBag {
+        position: relative !important;
+        padding: 10px;
+        overflow: scroll !important;
+        .form-group {}
+    }
+}

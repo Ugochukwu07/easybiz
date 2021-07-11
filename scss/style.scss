@@ -1,0 +1,112 @@
+@import './googleFonts';
+@import './variables';
+@import './resets';
+@import './404';
+
+/* Header */
+
+header {
+    position: relative;
+    @include transitions;
+}
+
+.header-bottom img {
+    vertical-align: center;
+}
+
+header {
+    color: rgb(27, 27, 27) !important;
+}
+
+
+/* footer */
+
+.footer,
+.clients {
+    .col-12.flex {
+        flex-wrap: wrap;
+        img {
+            margin: 5px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+    .footer-bag {
+        padding-left: 3rem !important;
+        ul {
+            li {
+                margin: 10px 0px 10px;
+                transition: .5s ease;
+                &:hover {
+                    padding-left: 20px;
+                    transition: .5s ease;
+                }
+            }
+        }
+    }
+    a {
+        color: white !important;
+        h2 {
+            transition: .5s ease;
+            &:hover {
+                font-size: 2.3rem;
+                transition: .5s ease;
+            }
+        }
+    }
+}
+
+
+/* Index */
+
+@import './index';
+@import './how';
+
+/* Access */
+
+@import "./access";
+@import "./reg";
+
+/* About */
+
+@import "./about";
+
+/* Support */
+
+@import './support';
+
+/* Plans */
+
+@import './plans';
+
+/* Products */
+
+@import './index-products';
+
+/* Single Product */
+
+@import './single';
+
+/* Bio */
+
+@import './bio-complete';
+
+/* Dashboards */
+
+@import './user_dashboard';
+
+/* Add Product */
+
+@import './add-products';
+.h-index {
+    position: absolute;
+    background: transparent;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* Other CSS */
+
+@import './others';

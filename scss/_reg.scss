@@ -1,0 +1,8 @@
+.images {
+    @include boxShadow;
+    background-color: darken(rgb(255, 255, 255), 2);
+}
+
+.next-btn {
+    border-radius: 20px !important;
+}

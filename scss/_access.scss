@@ -1,0 +1,61 @@
+.container-fluid.icc {
+    display: none;
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    .nav-link {
+        color: white;
+    }
+}
+
+.navigation {
+    .main {
+        list-style: none;
+        font-size: 4vh;
+        padding: 0;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border: 3px solid white;
+        background-color: #1831bdf6;
+        ul {
+            li {
+                width: 50%;
+                &:first-child {
+                    a {
+                        color: #1831bdf6;
+                        @include transitions;
+                        &:hover {
+                            background: #1831bdf6;
+                            color: #fff;
+                            @include transitions;
+                        }
+                    }
+                }
+                &:last-child {
+                    padding-right: 25px;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
+
+.log-form {
+    min-height: 600px;
+    .left-form {
+        background-image: url(../images/morning-2264051_1280.jpg);
+        @include background;
+    }
+    .col-5 {
+        form.accesss {
+            .form-group {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.login-col,
+.sign-col {
+    @include boxShadow;
+    border: 1px solid darken(rgb(255, 255, 255), 2);
+    background-color: darken(rgb(255, 255, 255), 1);
+}

@@ -1,0 +1,51 @@
+.main-contact {
+    .menu-contact {
+        ul {
+            li {
+                padding: .8rem;
+                background-color: rgba(75, 51, 51, 0.288);
+                border-bottom: 1px solid rgba(75, 51, 51, 0.534);
+            }
+        }
+    }
+    .messages {
+        .message {
+            margin-bottom: .5rem;
+            img {
+                height: 100px;
+                width: 100px;
+            }
+            .action {
+                display: flex;
+                justify-content: space-between;
+                span,
+                .action-btn {
+                    margin: auto;
+                    a {
+                        background-color: darken($color: white, $amount: 15);
+                    }
+                }
+            }
+            .message-text {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.main-contact {
+    .single-message {
+        .head {
+            img {
+                height: 80px;
+                width: 80px;
+            }
+            span {
+                padding: .5rem;
+                display: inline-block;
+                border-radius: 10px;
+                border-bottom: 1px solid rgba(75, 51, 51, 0.534);
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: fantasy;
+}
+
+.btn {
+    font-family: 'Neuton', serif;
+    font-size: 1.2rem;
+}
+
+.icon {
+    font-size: 4em !important;
+    margin-bottom: 1rem;
+}
+
+.title {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: rgb(209, 46, 46);
+        bottom: -8px;
+        width: 170px;
+        padding: 5px;
+    }
+}
+
+.paddind {
+    min-height: 50px;
+}
+
+.fixed-menu {
+    position: fixed !important;
+    width: 100% !important;
+    @include transitions;
+    z-index: 400;
+}
+
+.position-fixed {
+    top: 60px;
+    left: 50%;
+    z-index: 450;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.error {
+    @include type(rgb(255, 168, 168), rgb(184, 9, 9), 2px solid rgb(104, 17, 17));
+}
+
+.success {
+    @include type(rgb(125, 247, 125), rgb(20, 151, 20), 2px solid rgb(14, 116, 14));
+}
+
+.offer {
+    background-color: rgb(110, 23, 23);
+    color: white;
+    position: relative;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    .offer-message {
+        font-size: 20px;
+    }
+    .offer-link {
+        a {
+            color: #272727;
+            background-color: rgb(52, 228, 81);
+        }
+    }
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 2px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.plan {
+    height: 520px !important;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    span {
+        font-weight: 900 !important;
+    }
+}
